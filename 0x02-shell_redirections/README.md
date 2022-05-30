@@ -1,5 +1,5 @@
 ###### File 0-Hello World  creates a script that prints Hello World followed by a new line in the standard output
-###### File 0-Hello World  creates a script that prints Hello World followed by a new line in the standard output
+###### File 1-confused_smiley Write a script that displays a confused smiley "(Ôo)'.
 ###### File 0-Hello World  creates a script that prints Hello World followed by a new line in the standard output
 ###### File 0-Hello World  creates a script that prints Hello World followed by a new line in the standard output
 ###### File 0-Hello World  creates a script that prints Hello World followed by a new line in the standard output
