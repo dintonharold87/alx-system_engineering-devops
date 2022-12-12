@@ -6,10 +6,8 @@
 # 'Hello World!'.
 #
 
-apt-get -y update
-apt-get -y upgrade
-apt-get -y install nginx
-sed -i "21s/^listen .*/listen 80" /etc/nginx/sites-enabled/defult
+apt-get update
+apt-get install -y nginx
 ufw allow 'Nginx HTTP'
-echo Holberton School > /var/www/html/index.nginx-debian.html
-service nginx start
+echo "Hello World!" > /var/www/html/index.html
+service nginx restart
