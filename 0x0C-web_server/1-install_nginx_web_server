@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Install a nginx web server listening on port 80.
+#
+# Also, when querying nginx at its root / with a GET
+# request, it returns a page that contains the string
+# 'Hello World!'.
+#
+
+apt-get -y update
+apt-get -y upgrade
+apt-get -y install nginx
+sed -i "21s/^listen .*/listen 80" /etc/nginx/sites-enabled/defult
+ufw allow 'Nginx HTTP'
+echo Holberton School > /var/www/html/index.nginx-debian.html
+service nginx start
