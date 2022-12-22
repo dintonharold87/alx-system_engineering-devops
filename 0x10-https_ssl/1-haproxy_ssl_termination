@@ -34,29 +34,14 @@ defaults
 	errorfile 504 /etc/haproxy/errors/504.http
 frontend http
 	bind *:80
+
+	# This is our new config that listens on port 443 for SSL connections
+	bind *:443 ssl crt /etc/letsencrypt/live/www.dinton.tech/fullchain.pem
+ 
 	mode http
 	default_backend web-backend
 
 backend web-backend
 	balance roundrobin
 	server 66510-web-01 100.26.241.192:80 check
-	server 66510-web-02 35.168.8.232:80 check
-
-frontend dinton-frontend
-        bind *:80
-        mode http
-        default_backend dinton-backend
-backend dinton-backend
-        balance roundrobin
-        server 66510-web-01 100.26.241.192:80 check
-        server 66510-web-02 35.168.8.232:80 check
-
-frontend http
-	bind *:80
-	mode http
-	default_backend web-backend
-
-backend web-backend
-	balance roundrobin
-	server 66510-web-01 100.26.241.192:80 check
-	server 66510-web-02 35.168.8.232:80 check
+	server 66510-web-02 35.168.8.232:80 check 
