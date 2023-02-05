@@ -8,7 +8,7 @@ Feb 5
 
 Incident Report / Post Mortem for Web Application Downtime Due to Database Malfunction
 ======================================================================================
-![503 error code- Server Temporarily Unavailable](https://drive.google.com/file/d/1NQr_fqRheW6GDUHTxy-ND8iR2LbBQVj9/view?usp=share_link)
+<img src="https://drive.google.com/file/d/1NQr_fqRheW6GDUHTxy-ND8iR2LbBQVj9/view?usp=share_link">
 
 
 Issue Summary
